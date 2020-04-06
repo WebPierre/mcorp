@@ -1,0 +1,19 @@
+{
+	"plugins": [
+		[
+			"module-resolver",
+			{
+				"alias": {
+					"@Components": "./src/components",
+					"@Icons": "./src/icons",
+					"@Samples": "./src/samples",
+					"@Storybook": "./.storybook",
+					"@Types": "./src/types"
+				},
+				"root": ["./"]
+			}
+		],
+		"inline-react-svg"
+	],
+	"presets": ["next/babel"]
+}

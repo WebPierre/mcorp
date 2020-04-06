@@ -1,0 +1,79 @@
+/*
+ * Border-radius
+ */
+
+$smallBorderRadius: 4px;
+$mediumBorderRadius: 8px;
+$largeBorderRadius: 16px;
+
+/*
+ * Colors
+ */
+
+$primaryColor: #00415b;
+
+$accentColor: #eb7913;
+
+$errorColor: #ed6347;
+
+$warningColor: #f49342;
+
+$validationColor: #7acc52;
+
+$blackColor: #000000;
+$whiteColor: #ffffff;
+
+$level1GreyColor: #f0f3f6;
+$level2GreyColor: #dfe3e6;
+$level3GreyColor: #b3b9bd;
+
+$polarNeutralColor: #f4fbfe;
+
+$charcoalTextColor: #152934;
+$foggyTextColor: #596772;
+
+/*
+ * Fonts
+ */
+
+@font-face {
+	font-family: "ModMatrix";
+	src: url("/fonts/modmatrix-webfont.ttf") format("truetype"),
+		url("/fonts/modmatrix-webfont.woff") format("woff"),
+		url("/fonts/modmatrix-webfont.woff2") format("woff2");
+	font-weight: normal;
+	font-style: normal;
+}
+
+$primaryFontFamily: "Nunito", Helvetica, Arial, sans-serif;
+$accentFontFamily: "ModMatrix", Helvetica, Arial, sans-serif;
+
+$regularFontWeight: 400;
+$boldFontWeight: 700;
+
+$smallFontSize: 12px;
+$mediumFontSize: 14px;
+$largeFontSize: 16px;
+$extraLargeFontSize: 32px;
+$bigFontSize: 64px;
+
+/*
+ * Opacity
+ */
+
+$level1Opacity: 1;
+$level2Opacity: 0.87;
+$level3Opacity: 0.54;
+$level4Opacity: 0.12;
+
+/*
+ * Space
+ */
+
+$extraSmallSpace: 4px;
+$smallSpace: 8px;
+$mediumSpace: 16px;
+$largeSpace: 24px;
+$extraLargeSpace: 48px;
+$bigSpace: 64px;
+$giganticSpace: 72px;

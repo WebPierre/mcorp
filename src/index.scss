@@ -1,0 +1,52 @@
+@import "./base.scss";
+
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: $primaryFontFamily;
+	font-size: $mediumFontSize;
+	font-weight: $regularFontWeight;
+	color: $foggyTextColor;
+
+	line-height: 1.2;
+
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+b,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+th {
+	font-weight: $boldFontWeight;
+}
+
+button {
+	padding: 0;
+
+	border: 0;
+
+	background: 0;
+}
+
+svg {
+	display: block;
+}

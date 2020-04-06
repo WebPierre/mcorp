@@ -1,0 +1,27 @@
+@import "../../../../index.scss";
+
+.PageHeader {
+	display: grid;
+	grid-auto-flow: row;
+	grid-column-gap: $smallSpace;
+	grid-template-columns: 144px repeat(7, 1fr);
+	align-items: center;
+
+	opacity: $level2Opacity;
+
+	height: 100%;
+
+	padding: 0 $smallSpace;
+
+	border-radius: $mediumBorderRadius;
+
+	background-color: $primaryColor;
+
+	user-select: none;
+}
+
+.PageHeader-image {
+	width: 144px;
+
+	cursor: pointer;
+}

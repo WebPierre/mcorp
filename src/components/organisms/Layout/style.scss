@@ -1,0 +1,17 @@
+@import "../../../index.scss";
+
+.Page {
+	display: flex;
+	flex-direction: column;
+
+	height: 100vh;
+}
+
+.Page-header {
+	position: fixed;
+	z-index: 999;
+	top: $mediumSpace;
+	left: $mediumSpace;
+
+	height: $giganticSpace;
+}

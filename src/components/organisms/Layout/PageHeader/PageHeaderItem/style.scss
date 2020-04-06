@@ -1,0 +1,34 @@
+@import "../../../../../index.scss";
+
+.PageHeaderItem {
+	margin-bottom: $extraSmallSpace;
+
+	outline: none;
+
+	cursor: pointer;
+
+	&:last-child {
+		padding-right: 0;
+	}
+
+	&:hover,
+	&--selected {
+		.PageHeaderItem-icon,
+		.PageHeaderItem-text {
+			color: $accentColor;
+		}
+	}
+}
+
+.PageHeaderItem-icon {
+	display: flex;
+	justify-content: center;
+
+	color: $blackColor;
+}
+
+.PageHeaderItem-text {
+	font-family: $accentFontFamily;
+	font-size: $largeFontSize;
+	color: $whiteColor;
+}
