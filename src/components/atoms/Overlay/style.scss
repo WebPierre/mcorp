@@ -1,0 +1,21 @@
+@import "../../../index.scss";
+
+.Overlay {
+	position: absolute;
+	z-index: 9999;
+	top: 0;
+	left: 0;
+
+	opacity: $level3Opacity;
+
+	width: 100%;
+	height: 100%;
+
+	background-color: $foggyNeutralColor;
+
+	&--hidePage {
+		opacity: $level1Opacity;
+
+		background-color: $polarNeutralColor;
+	}
+}
