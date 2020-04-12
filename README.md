@@ -24,3 +24,4 @@ This project is a personal reworking project of MagicCorporation.com website to 
 ## Releases
 
 - 0.1.0 : New repository
+- 0.1.1 : Loader component
