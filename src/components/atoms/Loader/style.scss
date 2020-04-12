@@ -1,0 +1,36 @@
+@import "../../../index.scss";
+
+.Loader {
+	position: relative;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	width: 100%;
+	height: 100%;
+
+	&--fullPage {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+}
+
+.Loader-image {
+	z-index: 99999;
+
+	animation: bump 0.5s cubic-bezier(1, 0.5, 0, 0.5) infinite alternate;
+
+	width: 300px;
+	max-width: 35%;
+}
+
+@keyframes bump {
+	from {
+		transform: scale(1);
+	}
+	to {
+		transform: scale(1.2);
+	}
+}
