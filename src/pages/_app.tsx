@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { NextComponentType } from "next";
 import { AppContext, AppInitialProps, AppProps } from "next/app";
+import Router from "next/router";
 
 import Head from "@Components/atoms/Head";
 import Loader from "@Components/atoms/Loader";
@@ -8,8 +9,6 @@ import Layout from "@Components/organisms/Layout";
 import { Meta } from "@Types/head";
 
 import "../index.scss";
-
-import Router from "next/router";
 
 const App: NextComponentType<AppContext, AppInitialProps, AppProps> = ({
 	Component,
