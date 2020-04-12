@@ -1,16 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import { NextComponentType } from "next";
 import { AppContext, AppInitialProps, AppProps } from "next/app";
 
 import Head from "@Components/atoms/Head";
+import Loader from "@Components/atoms/Loader";
 import Layout from "@Components/organisms/Layout";
 import { Meta } from "@Types/head";
+
+import Router from "next/router";
 
 const App: NextComponentType<AppContext, AppInitialProps, AppProps> = ({
 	Component,
 	pageProps,
 }: AppProps) => {
+	const [isLoading, setIsLoading] = useState<boolean>(false);
 	const { description, title, url } = pageProps;
+
+	Router.events.on("routeChangeStart", () => setIsLoading(true));
+	Router.events.on("routeChangeComplete", () => setIsLoading(false));
+	Router.events.on("routeChangeError", () => setIsLoading(false));
 
 	return (
 		<>
@@ -18,6 +26,7 @@ const App: NextComponentType<AppContext, AppInitialProps, AppProps> = ({
 			<Layout>
 				<Component />
 			</Layout>
+			{isLoading && <Loader hidingPage={true} onFullPage={true} />}
 		</>
 	);
 };
