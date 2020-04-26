@@ -8,6 +8,7 @@ This project is a personal reworking project of MagicCorporation.com website to 
 
 - React
 - Next.js
+- GraphQL
 - Typescript
 - Storybook
 - Jest
@@ -25,3 +26,4 @@ This project is a personal reworking project of MagicCorporation.com website to 
 
 - 0.1.0 : New repository
 - 0.1.1 : Loader component
+- 0.2.0 : API GraphQL
