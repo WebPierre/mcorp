@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from "react";
 
-const CardsPage: FunctionComponent<{}> = () => {
+const CardsPage: FunctionComponent = () => {
 	return <div>Cards Page</div>;
 };
 

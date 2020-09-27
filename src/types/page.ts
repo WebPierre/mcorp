@@ -1,8 +1,16 @@
-export type PageId = "articles" | "cards" | "decks" | "extensions" | "forums" | "rules" | "shop";
+export type PageCategoryName =
+	| "articles"
+	| "cards"
+	| "decks"
+	| "extensions"
+	| "forums"
+	| "home"
+	| "rules"
+	| "shop";
 
 export interface PageCategory {
 	icon: string;
-	id: PageId;
 	label: string;
+	name: PageCategoryName;
 	path: string;
 }

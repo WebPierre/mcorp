@@ -1,8 +1,16 @@
 import React from "react";
-import { shallow } from "enzyme";
+import { render } from "@testing-library/react";
+
+import RouterMock from "@Utils/routerMock";
 
 import Layout from "./";
 
-it("renders without crashing", () => {
-	shallow(<Layout>Page</Layout>);
+describe("Layout component", () => {
+	test("Component is rendering without crashing", () => {
+		render(
+			<RouterMock>
+				<Layout>Page</Layout>
+			</RouterMock>,
+		);
+	});
 });

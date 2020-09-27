@@ -1,7 +1,7 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 
-import RouterMock from "@Storybook/routerMock";
+import RouterMock from "@Utils/routerMock";
 
 import Layout from "./";
 

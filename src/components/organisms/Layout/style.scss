@@ -9,9 +9,10 @@
 
 .Page-header {
 	position: fixed;
-	z-index: 999;
-	top: $mediumSpace;
-	left: $mediumSpace;
+	top: $xSmallSpace;
+	left: $xSmallSpace;
 
-	height: $giganticSpace;
+	z-index: 999;
+
+	height: $xxxxLargeSpace;
 }

@@ -1,8 +1,6 @@
 import React, { FunctionComponent } from "react";
 import classNames from "classnames";
 
-import "./style.scss";
-
 interface Props {
 	hidingPage: boolean;
 }

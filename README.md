@@ -12,18 +12,18 @@ This project is a personal reworking project of MagicCorporation.com website to 
 - Typescript
 - Storybook
 - Jest
-- Enzyme
+- React Testing Library
 
 ## Architecture
 
-- `src/components` : presentational and container components
-- `src/icons` : all icons
-- `src/pages` : page container components, used directly by Next.js routing
-- `src/samples` : API call responses and variables used by storybook and tests
-- `src/types` : shared typing
+- `src/components`: container and presentational components
+- `src/icons`: all icons
+- `src/pages`: page container components, used directly by Next.js routing
+- `src/samples`: API call responses and variables used by storybook and tests
+- `src/types`: shared typing
 
 ## Releases
 
-- 0.1.0 : New repository
-- 0.1.1 : Loader component
-- 0.2.0 : API GraphQL
+- 0.1.0: New repository
+- 0.1.1: Loader component
+- 0.2.0: API GraphQL

@@ -4,7 +4,6 @@ import classNames from "classnames";
 import Overlay from "@Components/atoms/Overlay";
 
 import logo from "./logo.png";
-import "./style.scss";
 
 interface Props {
 	hidingPage: boolean;

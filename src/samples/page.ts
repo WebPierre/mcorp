@@ -3,7 +3,7 @@ import { PageCategory } from "@Types/page";
 
 export const pageCategorySample: PageCategory = {
 	icon: CardsIcon,
-	id: "cards",
 	label: "CARTES",
+	name: "cards",
 	path: "/cards",
 };
