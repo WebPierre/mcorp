@@ -6,8 +6,9 @@ module.exports = {
 	],
 	moduleFileExtensions: ["js", "ts", "tsx", "json"],
 	moduleNameMapper: {
+		"^@Api(.*)$": "<rootDir>/src/api$1",
 		"^@Components(.*)$": "<rootDir>/src/components$1",
-		"^@Icons(.*)$": "<rootDir>/src/icons$1",
+		"^@Images(.*)$": "<rootDir>/src/images$1",
 		"^@Samples(.*)$": "<rootDir>/src/samples$1",
 		"^@Storybook(.*)$": "<rootDir>/.storybook$1",
 		"^@Types(.*)$": "<rootDir>/src/types$1",

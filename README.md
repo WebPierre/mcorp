@@ -9,6 +9,7 @@ This project is a personal reworking project of MagicCorporation.com website to 
 - React
 - Next.js
 - GraphQL
+- Apollo Client
 - Typescript
 - Storybook
 - Jest
@@ -16,11 +17,17 @@ This project is a personal reworking project of MagicCorporation.com website to 
 
 ## Architecture
 
+- `src/api`: API provider
+  - `src/api/default`: default values if API responses are null or wrong
+  - `src/api/formats`: API responses formatting functions
+  - `src/api/queries`: all GraphQL queries
 - `src/components`: container and presentational components
-- `src/icons`: all icons
+- `src/images`: images
+  - `src/images/icons`: all icons
 - `src/pages`: page container components, used directly by Next.js routing
-- `src/samples`: API call responses and variables used by storybook and tests
+- `src/samples`: API responses and variables used by storybook and tests
 - `src/types`: shared typing
+- `src/utils`: utility functions
 
 ## Releases
 

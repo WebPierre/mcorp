@@ -14,8 +14,9 @@
 		"noUnusedLocals": true,
 		"noUnusedParameters": true,
 		"paths": {
+			"@Api/*": ["src/api/*"],
 			"@Components/*": ["src/components/*"],
-			"@Icons/*": ["src/icons/*"],
+			"@Images/*": ["src/images/*"],
 			"@Samples/*": ["src/samples/*"],
 			"@Storybook/*": [".storybook/*"],
 			"@Types/*": ["src/types/*"],
@@ -31,5 +32,5 @@
 		"typeRoots": ["node_modules/@types", "src/types/libs"]
 	},
 	"exclude": ["build", "next.config.js", "node_modules"],
-	"include": [".storybook", "next-env.d.ts", "src"]
+	"include": ["next-env.d.ts", "src"]
 }

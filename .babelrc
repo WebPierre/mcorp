@@ -4,8 +4,9 @@
 			"module-resolver",
 			{
 				"alias": {
+					"@Api": "./src/api",
 					"@Components": "./src/components",
-					"@Icons": "./src/icons",
+					"@Images": "./src/images",
 					"@Samples": "./src/samples",
 					"@Storybook": "./.storybook",
 					"@Types": "./src/types",
@@ -14,6 +15,7 @@
 				"root": ["./"]
 			}
 		],
+		"graphql-tag",
 		"inline-react-svg"
 	],
 	"presets": ["next/babel"]
