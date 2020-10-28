@@ -1,7 +1,6 @@
 import React, { FunctionComponent, ReactNode } from "react";
 
 import PageHeader from "./PageHeader";
-import "./style.scss";
 
 interface Props {
 	children: ReactNode;

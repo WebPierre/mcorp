@@ -1,6 +1,5 @@
 import React, { FunctionComponent, ReactNode, useState } from "react";
 import { RouterContext } from "next/dist/next-server/lib/router-context";
-import Router from "next/router";
 import { action } from "@storybook/addon-actions";
 
 interface Props {
@@ -10,8 +9,9 @@ interface Props {
 const RouterMock: FunctionComponent<Props> = ({ children }) => {
 	const [pathname, setPathname] = useState("/");
 	const routerMock = {
-		asPath: "",
+		asPath: pathname,
 		back: () => null,
+		basePath: "",
 		beforePopState: () => null,
 		events: {
 			emit: () => null,
@@ -22,7 +22,7 @@ const RouterMock: FunctionComponent<Props> = ({ children }) => {
 		pathname,
 		prefetch: async () => undefined,
 		push: async (newPathname: string) => {
-			action("onItemClick")(newPathname);
+			action("onClickItem")(newPathname);
 
 			setPathname(newPathname);
 
@@ -31,11 +31,8 @@ const RouterMock: FunctionComponent<Props> = ({ children }) => {
 		query: {},
 		reload: () => null,
 		replace: async () => true,
-		route: "",
+		route: pathname,
 	};
-
-	// @ts-ignore
-	Router.router = routerMock;
 
 	return <RouterContext.Provider value={routerMock}>{children}</RouterContext.Provider>;
 };

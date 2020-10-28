@@ -3,8 +3,7 @@ import classNames from "classnames";
 
 import Overlay from "@Components/atoms/Overlay";
 
-import logo from "./logo.png";
-import "./style.scss";
+import logo from "@Images/logo.png";
 
 interface Props {
 	hidingPage: boolean;

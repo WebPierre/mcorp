@@ -50,11 +50,8 @@ $accentFontFamily: "ModMatrix", Helvetica, Arial, sans-serif;
 $regularFontWeight: 400;
 $boldFontWeight: 700;
 
-$smallFontSize: 12px;
 $mediumFontSize: 14px;
 $largeFontSize: 16px;
-$extraLargeFontSize: 32px;
-$bigFontSize: 64px;
 
 /*
  * Opacity
@@ -69,10 +66,14 @@ $level4Opacity: 0.12;
  * Space
  */
 
-$extraSmallSpace: 4px;
-$smallSpace: 8px;
-$mediumSpace: 16px;
-$largeSpace: 24px;
-$extraLargeSpace: 48px;
-$bigSpace: 64px;
-$giganticSpace: 72px;
+$xxxxSmallSpace: 2px;
+$xxxSmallSpace: 4px;
+$xxSmallSpace: 8px;
+$xSmallSpace: 16px;
+$smallSpace: 24px;
+$mediumSpace: 32px;
+$largeSpace: 40px;
+$xLargeSpace: 48px;
+$xxLargeSpace: 56px;
+$xxxLargeSpace: 64px;
+$xxxxLargeSpace: 72px;

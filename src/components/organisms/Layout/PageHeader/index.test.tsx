@@ -1,8 +1,16 @@
 import React from "react";
-import { shallow } from "enzyme";
+import { render } from "@testing-library/react";
+
+import RouterMock from "@Utils/routerMock";
 
 import PageHeader from "./";
 
-it("renders without crashing", () => {
-	shallow(<PageHeader />);
+describe("PageHeader component", () => {
+	test("Component is rendering without crashing", () => {
+		render(
+			<RouterMock>
+				<PageHeader />
+			</RouterMock>,
+		);
+	});
 });

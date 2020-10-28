@@ -7,12 +7,12 @@
 		"node": true
 	},
 	"extends": [
-		"prettier/@typescript-eslint",
-		"plugin:@typescript-eslint/recommended",
-		"plugin:prettier/recommended",
-		"plugin:react/recommended"
+		"eslint:recommended",
+		"plugin:react/recommended",
+		"plugin:@typescript-eslint/recommended"
 	],
 	"parser": "@typescript-eslint/parser",
+	"plugins": ["@typescript-eslint"],
 	"parserOptions": {
 		"ecmaFeatures": {
 			"jsx": true
@@ -21,7 +21,6 @@
 		"project": "./tsconfig.json",
 		"sourceType": "module"
 	},
-	"plugins": ["@typescript-eslint", "prettier", "react"],
 	"rules": {
 		"func-call-spacing": ["error", "never"],
 		"prefer-const": [
@@ -42,21 +41,9 @@
 			}
 		],
 		"@typescript-eslint/array-type": ["error", { "default": "generic" }],
-		"@typescript-eslint/camelcase": ["error", { "properties": "always" }],
-		"@typescript-eslint/class-name-casing": "error",
+		"@typescript-eslint/ban-ts-comment": "off",
 		"@typescript-eslint/no-unused-vars": "error",
 		"@typescript-eslint/prefer-regexp-exec": "error",
 		"@typescript-eslint/prefer-string-starts-ends-with": "error"
-	},
-	"settings": {
-		"react": {
-			"pragma": "React",
-			"version": "detect"
-		},
-		"linkComponents": [
-			// Components used as alternatives to <a> for linking, eg. <Link to={ url } />
-			"Hyperlink",
-			{ "name": "Link", "linkAttribute": "to" }
-		]
 	}
 }

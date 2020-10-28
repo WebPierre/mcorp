@@ -1,8 +1,31 @@
-export type PageId = "articles" | "cards" | "decks" | "extensions" | "forums" | "rules" | "shop";
+export interface PageMetas {
+	description: string;
+	title: string;
+	url: string;
+}
+
+export interface PageMetasApi {
+	metas: PageMetas;
+	name: string;
+}
+
+export interface PagesMetasApi {
+	pages: Array<PageMetasApi>;
+}
+
+export type PageCategoryName =
+	| "articles"
+	| "cards"
+	| "decks"
+	| "extensions"
+	| "forums"
+	| "home"
+	| "rules"
+	| "shop";
 
 export interface PageCategory {
 	icon: string;
-	id: PageId;
 	label: string;
+	name: PageCategoryName;
 	path: string;
 }

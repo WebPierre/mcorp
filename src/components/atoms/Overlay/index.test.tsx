@@ -1,8 +1,10 @@
 import React from "react";
-import { shallow } from "enzyme";
+import { render } from "@testing-library/react";
 
 import Overlay from "./";
 
-it("renders without crashing", () => {
-	shallow(<Overlay hidingPage={false} />);
+describe("Overlay component", () => {
+	test("Component is rendering without crashing", () => {
+		render(<Overlay hidingPage={false} />);
+	});
 });

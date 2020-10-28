@@ -1,32 +1,11 @@
-const tsconfigPathsPlugin = require("tsconfig-paths-webpack-plugin");
-const withFonts = require("next-fonts");
 const withImages = require("next-images");
 const withPlugins = require("next-compose-plugins");
-const withSass = require("@zeit/next-sass");
-const withSourceMaps = require("@zeit/next-source-maps");
 
 const nextConfig = {
 	distDir: "build",
-	useFileSystemPublicRoutes: true,
-	webpack(config) {
-		config.resolve.extensions.push(".ts", ".tsx");
-		config.resolve.plugins = [new tsconfigPathsPlugin()];
-
-		return config;
+	env: {
+		DATABASE_URL: "https://internal-monarch-18.hasura.app/v1/graphql",
 	},
 };
 
-module.exports = withPlugins(
-	[
-		[withFonts],
-		[withImages],
-		[withSass],
-		[
-			withSourceMaps,
-			{
-				devtool: "cheap-module-eval-source-map",
-			},
-		],
-	],
-	nextConfig,
-);
+module.exports = withPlugins([[withImages]], nextConfig);

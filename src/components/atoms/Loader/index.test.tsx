@@ -1,8 +1,10 @@
 import React from "react";
-import { shallow } from "enzyme";
+import { render } from "@testing-library/react";
 
 import Loader from "./";
 
-it("renders without crashing", () => {
-	shallow(<Loader hidingPage={false} onFullPage={false} />);
+describe("Loader component", () => {
+	test("Component is rendering without crashing", () => {
+		render(<Loader hidingPage={false} onFullPage={false} />);
+	});
 });

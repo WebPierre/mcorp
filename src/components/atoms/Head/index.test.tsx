@@ -1,12 +1,17 @@
 import React from "react";
-import { shallow } from "enzyme";
+import { MockedProvider } from "@apollo/client/testing";
+import { render } from "@testing-library/react";
 
-import { metaSample } from "@Samples/head";
+import { pagesMetasApiMock } from "@Samples/api/mocks/page";
 
 import Head from "./";
 
-it("renders without crashing", () => {
-	shallow(
-		<Head description={metaSample.description} title={metaSample.title} url={metaSample.url} />,
-	);
+describe("Head component", () => {
+	test("Component is rendering without crashing", () => {
+		render(
+			<MockedProvider addTypename={false} mocks={pagesMetasApiMock}>
+				<Head pageName="cards" />
+			</MockedProvider>,
+		);
+	});
 });

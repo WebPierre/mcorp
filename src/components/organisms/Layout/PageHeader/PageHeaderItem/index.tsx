@@ -5,7 +5,7 @@ import classNames from "classnames";
 
 import { PageCategory } from "@Types/page";
 
-import "./style.scss";
+import logo from "@Images/logo.png";
 
 interface Props {
 	item: PageCategory;
@@ -17,16 +17,20 @@ const PageHeaderItem: FunctionComponent<Props> = ({ item }) => {
 
 	return (
 		<Link href={item.path}>
-			<button
-				className={classNames("PageHeaderItem", {
-					"PageHeaderItem--selected": router.pathname === item.path,
-				})}
-			>
-				<div className="PageHeaderItem-icon">
-					<Icon />
-				</div>
-				<span className="PageHeaderItem-text">{item.label}</span>
-			</button>
+			{item.name === "home" ? (
+				<img className="PageHeader-image" alt="Logo MagicCorporation" src={logo} />
+			) : (
+				<button
+					className={classNames("PageHeaderItem", {
+						"PageHeaderItem--selected": router.pathname === item.path,
+					})}
+				>
+					<div className="PageHeaderItem-icon">
+						<Icon />
+					</div>
+					<span className="PageHeaderItem-text">{item.label}</span>
+				</button>
+			)}
 		</Link>
 	);
 };
