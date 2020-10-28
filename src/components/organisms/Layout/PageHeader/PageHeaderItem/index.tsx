@@ -5,7 +5,7 @@ import classNames from "classnames";
 
 import { PageCategory } from "@Types/page";
 
-import logo from "./logo.png";
+import logo from "@Images/logo.png";
 
 interface Props {
 	item: PageCategory;

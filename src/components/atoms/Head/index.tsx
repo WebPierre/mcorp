@@ -1,13 +1,24 @@
 import React, { FunctionComponent } from "react";
 import NextHead from "next/head";
+import { useQuery } from "@apollo/client";
+
+import { toPageMetas } from "@Api/formats/page";
+import { pageMetasQuery } from "@Api/queries/page";
+import Loader from "@Components/atoms/Loader";
 
 interface Props {
-	description: string;
-	title: string;
-	url: string;
+	pageName: string;
 }
 
-const Head: FunctionComponent<Props> = ({ description, title, url }) => {
+const Head: FunctionComponent<Props> = ({ pageName }) => {
+	const { data, loading } = useQuery(pageMetasQuery, {
+		variables: { name: pageName },
+	});
+
+	if (loading) return <Loader hidingPage={true} onFullPage={true} />;
+
+	const { description, title, url } = toPageMetas(data, { condition: "name", value: pageName });
+
 	return (
 		<NextHead>
 			<title>{title}</title>

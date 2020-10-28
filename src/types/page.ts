@@ -1,3 +1,18 @@
+export interface PageMetas {
+	description: string;
+	title: string;
+	url: string;
+}
+
+export interface PageMetasApi {
+	metas: PageMetas;
+	name: string;
+}
+
+export interface PagesMetasApi {
+	pages: Array<PageMetasApi>;
+}
+
 export type PageCategoryName =
 	| "articles"
 	| "cards"

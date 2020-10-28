@@ -1,4 +1,4 @@
-import CardsIcon from "@Icons/cards.svg";
+import CardsIcon from "@Images/icons/cards.svg";
 import { PageCategory } from "@Types/page";
 
 export const pageCategorySample: PageCategory = {

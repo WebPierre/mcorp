@@ -22,7 +22,7 @@ const RouterMock: FunctionComponent<Props> = ({ children }) => {
 		pathname,
 		prefetch: async () => undefined,
 		push: async (newPathname: string) => {
-			action("onItemClick")(newPathname);
+			action("onClickItem")(newPathname);
 
 			setPathname(newPathname);
 

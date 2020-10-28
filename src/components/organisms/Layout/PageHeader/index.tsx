@@ -1,12 +1,12 @@
 import React, { FunctionComponent } from "react";
 
-import ArticlesIcon from "@Icons/articles.svg";
-import CardsIcon from "@Icons/cards.svg";
-import DecksIcon from "@Icons/decks.svg";
-import ExtensionsIcon from "@Icons/extensions.svg";
-import ForumsIcon from "@Icons/forums.svg";
-import RulesIcon from "@Icons/rules.svg";
-import ShopIcon from "@Icons/shop.svg";
+import ArticlesIcon from "@Images/icons/articles.svg";
+import CardsIcon from "@Images/icons/cards.svg";
+import DecksIcon from "@Images/icons/decks.svg";
+import ExtensionsIcon from "@Images/icons/extensions.svg";
+import ForumsIcon from "@Images/icons/forums.svg";
+import RulesIcon from "@Images/icons/rules.svg";
+import ShopIcon from "@Images/icons/shop.svg";
 import { PageCategory } from "@Types/page";
 
 import PageHeaderItem from "./PageHeaderItem";

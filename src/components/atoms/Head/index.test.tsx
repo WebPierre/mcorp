@@ -1,14 +1,17 @@
 import React from "react";
+import { MockedProvider } from "@apollo/client/testing";
 import { render } from "@testing-library/react";
 
-import { metaSample } from "@Samples/head";
+import { pagesMetasApiMock } from "@Samples/api/mocks/page";
 
 import Head from "./";
 
 describe("Head component", () => {
 	test("Component is rendering without crashing", () => {
 		render(
-			<Head description={metaSample.description} title={metaSample.title} url={metaSample.url} />,
+			<MockedProvider addTypename={false} mocks={pagesMetasApiMock}>
+				<Head pageName="cards" />
+			</MockedProvider>,
 		);
 	});
 });
