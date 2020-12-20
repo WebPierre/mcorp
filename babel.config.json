@@ -4,10 +4,12 @@
 			"module-resolver",
 			{
 				"alias": {
-					"@Api": "./src/api",
-					"@Components": "./src/components",
+					"@Api": "./src/providers/api",
+					"@Atoms": "./src/components/atoms",
 					"@Images": "./src/images",
+					"@Organisms": "./src/components/organisms",
 					"@Samples": "./src/samples",
+					"@State": "./src/providers/state",
 					"@Storybook": "./.storybook",
 					"@Types": "./src/types",
 					"@Utils": "./src/utils"
@@ -16,7 +18,7 @@
 			}
 		],
 		"graphql-tag",
-		"inline-react-svg"
+		"@simplyianm/babel-plugin-inline-react-svg"
 	],
 	"presets": ["next/babel"]
 }

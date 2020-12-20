@@ -12,7 +12,6 @@
 		"plugin:@typescript-eslint/recommended"
 	],
 	"parser": "@typescript-eslint/parser",
-	"plugins": ["@typescript-eslint"],
 	"parserOptions": {
 		"ecmaFeatures": {
 			"jsx": true
@@ -21,6 +20,7 @@
 		"project": "./tsconfig.json",
 		"sourceType": "module"
 	},
+	"plugins": ["@typescript-eslint"],
 	"rules": {
 		"func-call-spacing": ["error", "never"],
 		"prefer-const": [
@@ -31,8 +31,10 @@
 			}
 		],
 		"react/destructuring-assignment": ["error", "always"],
-		"react/prop-types": ["off"],
+		"react/jsx-uses-react": "off",
+		"react/prop-types": "off",
 		"react/no-array-index-key": "error",
+		"react/react-in-jsx-scope": "off",
 		"react/self-closing-comp": [
 			"error",
 			{
