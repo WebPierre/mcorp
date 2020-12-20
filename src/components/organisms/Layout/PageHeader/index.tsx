@@ -1,4 +1,4 @@
-import React, { FunctionComponent } from "react";
+import { FunctionComponent } from "react";
 
 import ArticlesIcon from "@Images/icons/articles.svg";
 import CardsIcon from "@Images/icons/cards.svg";

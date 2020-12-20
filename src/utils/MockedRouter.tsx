@@ -1,12 +1,12 @@
-import React, { FunctionComponent, ReactNode, useState } from "react";
+import React, { FunctionComponent, ReactElement, useState } from "react";
 import { RouterContext } from "next/dist/next-server/lib/router-context";
 import { action } from "@storybook/addon-actions";
 
 interface Props {
-	children: ReactNode;
+	children: ReactElement;
 }
 
-const RouterMock: FunctionComponent<Props> = ({ children }) => {
+const MockedRouter: FunctionComponent<Props> = ({ children }) => {
 	const [pathname, setPathname] = useState("/");
 	const routerMock = {
 		asPath: pathname,
@@ -37,4 +37,4 @@ const RouterMock: FunctionComponent<Props> = ({ children }) => {
 	return <RouterContext.Provider value={routerMock}>{children}</RouterContext.Provider>;
 };
 
-export default RouterMock;
+export default MockedRouter;

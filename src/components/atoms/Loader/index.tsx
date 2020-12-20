@@ -1,11 +1,10 @@
-import React, { FunctionComponent } from "react";
+import { FunctionComponent } from "react";
 import classNames from "classnames";
 
-import Overlay from "@Components/atoms/Overlay";
-
+import Overlay from "@Atoms/Overlay";
 import logo from "@Images/logo.png";
 
-interface Props {
+export interface Props {
 	hidingPage: boolean;
 	onFullPage: boolean;
 }
