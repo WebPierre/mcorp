@@ -1,5 +1,4 @@
 /* eslint-disable @typescript-eslint/explicit-module-boundary-types */
-import { useMemo } from "react";
 import { ApolloClient, HttpLink, InMemoryCache, NormalizedCacheObject } from "@apollo/client";
 
 let apolloClient: ApolloClient<NormalizedCacheObject>;
@@ -34,5 +33,5 @@ export const initializeApiProvider = (initialState?: ApolloClient<NormalizedCach
 };
 
 export const getApiProvider = (initialApiProviderState: ApolloClient<NormalizedCacheObject>) => {
-	return useMemo(() => initializeApiProvider(initialApiProviderState), [initialApiProviderState]);
+	return initializeApiProvider(initialApiProviderState);
 };

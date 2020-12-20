@@ -6,13 +6,13 @@ import { toPageMetas } from "../page";
 describe("toPageMetas", () => {
 	test("Expect api values", () => {
 		expect(toPageMetas(pagesMetasApiSample, { condition: "name", value: "cards" })).toEqual(
-			pagesMetasApiSample.pages[0].metas,
+			pagesMetasApiSample.pages[0].metas
 		);
 	});
 
 	test("Expect default values", () => {
 		expect(toPageMetas(pagesMetasApiSample, { condition: "name", value: "articles" })).toEqual(
-			pageMetasDefault,
+			pageMetasDefault
 		);
 	});
 });

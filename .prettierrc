@@ -1,8 +1,15 @@
 {
 	"arrowParens": "always",
+	"overrides": [
+		{
+			"files": [".prettierrc"],
+			"options": {
+				"parser": "json"
+			}
+		}
+	],
 	"printWidth": 100,
 	"semi": true,
-	"tabWidth": 2,
-	"trailingComma": "all",
+	"trailingComma": "es5",
 	"useTabs": true
 }

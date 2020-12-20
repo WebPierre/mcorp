@@ -1,5 +1,6 @@
-import { isQueryConditionRespected } from "../checks";
 import { pagesMetasApiSample } from "@Samples/api/page";
+
+import { isQueryConditionRespected } from "../checks";
 
 describe("isQueryConditionRespected", () => {
 	test("Condition respected", () => {
@@ -7,7 +8,7 @@ describe("isQueryConditionRespected", () => {
 			isQueryConditionRespected(pagesMetasApiSample.pages[0], {
 				condition: "name",
 				value: "cards",
-			}),
+			})
 		).toBeTruthy();
 	});
 
@@ -16,7 +17,7 @@ describe("isQueryConditionRespected", () => {
 			isQueryConditionRespected(pagesMetasApiSample.pages[0], {
 				condition: "name",
 				value: "articles",
-			}),
+			})
 		).toBeFalsy();
 	});
 });
