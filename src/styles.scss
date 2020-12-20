@@ -1,6 +1,6 @@
-@import "./components/atoms/Loader/style.scss";
-@import "./components/atoms/Overlay/style.scss";
+@import "./components/atoms/Loader/index.styles.scss";
+@import "./components/atoms/Overlay/index.styles.scss";
 
-@import "./components/organisms/Layout/style.scss";
-@import "./components/organisms/Layout/PageHeader/style.scss";
-@import "./components/organisms/Layout/PageHeader/PageHeaderItem/style.scss";
+@import "./components/organisms/Layout/index.styles.scss";
+@import "./components/organisms/Layout/PageHeader/index.styles.scss";
+@import "./components/organisms/Layout/PageHeader/PageHeaderItem/index.styles.scss";
